@@ -1,7 +1,0 @@
-OMM sample.poc.customer.domain.LoginOut
-< logicalName= "로그인 출력 IO" description="로그인 출력 IO"
->
-{
-	String custId < length = 20 description = "고객ID" > ;
-	String custNm < length = 20 description = "고객명" > ;
-}
