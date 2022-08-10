@@ -1,0 +1,6 @@
+OMM sample.poc.customer.domain.CustomerIn
+< logicalName= "고객 정보 입력 IO" description="고객 정보 입력 IO"
+>
+{
+	String custId < length = 20 description = "고객ID" > ;
+}
