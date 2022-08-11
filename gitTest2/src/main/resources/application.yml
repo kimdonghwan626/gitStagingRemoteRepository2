@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: gitTest2
+
+bxframework:
+  base-package: bxmc
+  application:
+    type : online
+    datasource:
+      main-ds: # Datasource name
+        jdbc: # JdbcApplicationDataSource
+          driver-class-name: org.h2.Driver
+          jdbc-url: jdbc:h2:mem:test;MODE=Oracle
+          username: sa
+          password: 
+---
+spring:
+  profiles: local | test
+  main:
+    banner-mode: "off"
+  cloud:
+    kubernetes:
+      enabled: false
+    discovery:
+      client:
+        simple:
+          instances:
+            local-service:
+              - uri: http://localhost:${server.port}
+  zipkin:
+    enabled: false
+
+bxframework:
+  etcd:
+    enabled: false
+  request:
+    control-skip-patterns:
+      - "/**"
+logging:
+  level:
+    io.fabric8.kubernetes.client.Config: error
+    org.apache: debug #${logging.level.root}
+    bxmc: trace
+    bxmc.request.mapping.AnnotatedRequestMappingHandlerMapping: debug #${logging.level.root}
+    org.springframework.web: debug
+    sample: debug
