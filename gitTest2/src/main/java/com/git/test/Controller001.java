@@ -17,5 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller001 {
 	private Logger logger= LoggerFactory.getLogger(getClass());
 	
-	private int i;
+	public void test() {
+		System.out.println()
+	}
 }
