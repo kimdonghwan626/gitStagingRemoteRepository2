@@ -1,7 +1,0 @@
-OMM com.git.test.IO001
-< logicalName = "IO001" description="IO001"
->
-{
-	String srch < length = 99 description = "검색" > ;
-	String cust < length = 50 description = "고객" > ;
-}
