@@ -1,4 +1,4 @@
-package com.git.test;
+package com.git.test.controller;
 
 import bxm.common.annotaion.BxmCategory;
 import org.slf4j.Logger;
