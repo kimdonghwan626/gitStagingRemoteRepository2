@@ -16,8 +16,5 @@ import org.springframework.web.bind.annotation.RestController;
 @BxmCategory(logicalName="Controller001", description="Controller001")
 public class Controller001 {
 	private Logger logger= LoggerFactory.getLogger(getClass());
-	
-	public void test() {
-		System.out.println()
-	}
+
 }
