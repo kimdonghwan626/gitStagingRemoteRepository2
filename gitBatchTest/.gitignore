@@ -1,0 +1,13 @@
+*.log
+.gradle
+/build/
+/bin/
+!**/src/main/**
+!**/src/test/**
+gradlew.bat
+
+#generated config
+config/*.conf
+src/main/resources/config-repository.properties
+
+.classpath

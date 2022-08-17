@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+		maven {
+			url "${plugin_management_artifactory_url}"
+				credentials {
+					username "${plugin_management_artifactory_user}"
+					password "${plugin_management_artifactory_password}"
+			}
+		}
+    }
+}
+rootProject.name = 'gitBatchTest'
