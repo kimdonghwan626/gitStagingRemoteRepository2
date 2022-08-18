@@ -1,4 +1,4 @@
-package com.git.test2;
+package com.git.test3;
 
 import bxm.common.annotaion.BxmCategory;
 import org.slf4j.Logger;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @BxmCategory(logicalName="Component1", description="Component1")
-public class Component3 {
+public class Component1 {
 	private Logger logger= LoggerFactory.getLogger(getClass());
 	int i;
 }
