@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @BxmCategory(logicalName="Service001", description="Service001")
-public class Service001 {
+public class Service002 {
 	private Logger logger= LoggerFactory.getLogger(getClass());
 	
 	

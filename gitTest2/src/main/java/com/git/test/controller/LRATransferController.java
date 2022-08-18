@@ -1,4 +1,4 @@
-package com.git.test.controller;
+package sample.poc.transfer.controller;
 
 import java.math.BigDecimal;
 import java.time.temporal.ChronoUnit;
@@ -60,9 +60,9 @@ public class LRATransferController {
 		PrependedSystemHeader header = PrependedSystemHeader.prepend(systemHeader);
 
 		// 출금
-		WithdrawIn withdrawIn = new WithdrawIn(); 
+		WithdrawIn withdrawIn = new WithdrawIn();
 		withdrawIn.setCustId(in.getCustId());
-		withdrawIn.setAcctNum(in.getWithdrawAcctNum());   
+		withdrawIn.setAcctNum(in.getWithdrawAcctNum());
 		withdrawIn.setSummary(in.getSummary());
 		withdrawIn.setWithdrawAmt(in.getTransferAmt());
 
@@ -71,7 +71,7 @@ public class LRATransferController {
 					withdrawIn, String.class);
 		} catch (Exception e) {
 			logger.error("Failed to withdraw...", e);
-			throw new ApplicationException("sample.poc.transfer.failed", "Failed to transfer"); 
+			throw new ApplicationException("sample.poc.transfer.failed", "Failed to transfer");
 		}
 
 		// 출금이 성공한 경우 입금 실패시 처리를 위해 terminataionData에 출금정보를 저장

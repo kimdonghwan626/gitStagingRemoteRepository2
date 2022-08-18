@@ -170,6 +170,7 @@ publishing {
 	}
 }
 
+
 // dependencies
 dependencies {
 	compile 'bxmc-tool:bxmc-das-tester:5.0.0+'
